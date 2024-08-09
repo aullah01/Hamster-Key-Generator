@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     startBtn.addEventListener('click', async () => {
         const gameChoice = parseInt(gameSelect.value);
-        const keyCount = 50;
+        const keyCount = parseInt(keyCountSelect.value);
         const game = games[gameChoice];
 
         // Hide the form sections
