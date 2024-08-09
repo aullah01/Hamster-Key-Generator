@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const clientId = generateClientId();
             let clientToken;
             let loginAttempts = 0;
-            const maxLoginAttempts = 20;
+            const maxLoginAttempts = 10;
             
             while (loginAttempts < maxLoginAttempts) {
                 try {
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            for (let i = 0; i < 21; i++) {
+            for (let i = 0; i < 11; i++) {
                 await sleep(EVENTS_DELAY * delayRandom());
                 const hasCode = await emulateProgress(clientToken, game.promoId);
                 updateProgress(7 / keyCount, 'Emulating progress...');
