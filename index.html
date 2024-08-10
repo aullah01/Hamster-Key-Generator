@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamster Promo Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Hamster Key Generator Mady By Ameen</h1>
+        <div id="formContainer">
+            <div class="form-group" id="gameSelectGroup">
+                <label for="gameSelect">Select Game:</label>
+                <select id="gameSelect">
+                    <option value="1">Riding Extreme 3D</option>
+                    <option value="2">Chain Cube 2048</option>
+                    <option value="3">My Clone Army</option>
+                    <option value="4">Train Miner</option>
+                </select>
+            </div>
+            <div class="form-group" id="keyCountGroup">
+                <label for="keyCountSelect">Select Number of Keys:</label>
+                <select id="keyCountSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="10">11</option>
+                    <option value="10">12</option>
+                    <option value="10">13</option>
+                    <option value="10">14</option>
+                    <option value="10">15</option>
+                    <option value="10">16</option>
+                    <option value="10">17</option>
+                    <option value="10">18</option>
+                    <option value="10">19</option>
+                    <option value="10">20</option>
+                    <!-- <option value="10">21</option>
+                    <option value="10">22</option>
+                    <option value="10">23</option>
+                    <option value="10">24</option>
+                    <option value="10">25</option>
+                    <option value="10">26</option>
+                    <option value="10">27</option>
+                    <option value="10">28</option>
+                    <option value="10">29</option>
+                    <option value="10">30</option>
+                    <option value="10">31</option>
+                    <option value="10">32</option>
+                    <option value="10">33</option>
+                    <option value="10">34</option>
+                    <option value="10">35</option>
+                    <option value="10">36</option>
+                    <option value="10">37</option>
+                    <option value="10">38</option>
+                    <option value="10">39</option>
+                    <option value="10">40</option>
+                    <option value="10">41</option>
+                    <option value="10">42</option>
+                    <option value="10">43</option>
+                    <option value="10">44</option>
+                    <option value="10">45</option>
+                    <option value="10">46</option>
+                    <option value="10">47</option>
+                    <option value="10">48</option>
+                    <option value="10">49</option>
+                    <option value="10">50</option> -->
+                </select>
+            </div>
+            <button id="startBtn">Generate Keys</button>
+        </div>
+
+        <div id="progressContainer" class="hidden">
+            <div class="progress-bar">
+                <div id="progressBar"></div>
+            </div>
+            <p id="progressText">0%</p>
+            <p id="progressLog">Starting...</p>
+        </div>
+
+        <div id="keyContainer" class="hidden">
+            <h2 id="generatedKeysTitle" class="hidden">Generated Keys</h2>
+            <div id="keysList"></div>
+            <button id="copyAllBtn" class="hidden">Copy All Keys</button>
+        </div>
+
+        <p id="keyCountLabel">Number of keys:</p>
+
+        <button id="generateMoreBtn" class="hidden">Generate More Keys</button>
+        <p id="copyStatus" class="hidden">Keys copied to clipboard!</p>
+        
+        <div class="footer">
+            <p>Disclaimer: This tool is for educational purposes only. Use responsibly.</p>
+            <button id="sourceCode">Source code</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
